@@ -24,8 +24,15 @@ def test_suma_puntos():
     assert Bowling("9-9-9-9-9-9-9-9-9-9-").suma_puntos()==90
     assert Bowling("5/5/5/5/5/5/5/5/5/5/5").suma_puntos()==150
     assert Bowling("XXXXXXXXXXXX").suma_puntos()==300
+    assert Bowling("XXX9-9-9-9-9-9-9-").suma_puntos()==141
     assert Bowling("8-7-539/9/X8-513/9-").suma_puntos()==122
     assert Bowling("8/9-44729-XX8-359/7").suma_puntos()==133
+    assert Bowling("-/-/-/-/-/-/-/-/-/-/-").suma_puntos()==100
+    assert Bowling("X5/X5/XX5/--5/X5/").suma_puntos()==175
+    assert Bowling("8/549-XX5/53639/9/X").suma_puntos()==149
+
+
+
 
 
 
